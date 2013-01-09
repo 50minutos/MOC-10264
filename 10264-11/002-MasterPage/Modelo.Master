@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modelo.master.cs" Inherits="_002_MasterPage.Modelo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>
+            Empresa ABC Ltda</h1>
+        <p style="text-align:center;">
+            <a href="/WebForm1.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/WebForm2.aspx">Produtos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/WebForm3.aspx">Serviços</a></p>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <p style="text-align: center;">
+            by Agnaldo &copy 2012</p>
+    </div>
+    </form>
+</body>
+</html>

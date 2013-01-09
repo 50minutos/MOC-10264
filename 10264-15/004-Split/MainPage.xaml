@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="_004_Split.MainPage"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:Height="300" d:Width="400">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition MinWidth="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Content="oi"></Button>
+        <sdk:GridSplitter HorizontalAlignment="Center" Grid.Column="1" Width="3" VerticalAlignment="Stretch" ShowsPreview="False"/>
+        <Button Grid.Column="2" Content="tchau"></Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001-EntityFramework", "001-EntityFramework\001-EntityFramework.csproj", "{D76C3CDF-3F7A-41EB-9FE9-0CC92BB9D042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D76C3CDF-3F7A-41EB-9FE9-0CC92BB9D042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76C3CDF-3F7A-41EB-9FE9-0CC92BB9D042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76C3CDF-3F7A-41EB-9FE9-0CC92BB9D042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76C3CDF-3F7A-41EB-9FE9-0CC92BB9D042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

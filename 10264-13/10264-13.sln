@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001-HtmlWebForms", "001-HtmlWebForms\001-HtmlWebForms.csproj", "{4C7259BD-832D-404D-9271-9DA615A8618A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002-AjaxMvc", "002-AjaxMvc\002-AjaxMvc.csproj", "{30B45200-39C5-4CF4-B016-669C4B39205B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003-LoadMvc", "003-LoadMvc\003-LoadMvc.csproj", "{D4255C55-65B2-4BED-B6B7-D73B7B435465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C7259BD-832D-404D-9271-9DA615A8618A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7259BD-832D-404D-9271-9DA615A8618A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7259BD-832D-404D-9271-9DA615A8618A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7259BD-832D-404D-9271-9DA615A8618A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B45200-39C5-4CF4-B016-669C4B39205B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B45200-39C5-4CF4-B016-669C4B39205B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B45200-39C5-4CF4-B016-669C4B39205B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B45200-39C5-4CF4-B016-669C4B39205B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4255C55-65B2-4BED-B6B7-D73B7B435465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4255C55-65B2-4BED-B6B7-D73B7B435465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4255C55-65B2-4BED-B6B7-D73B7B435465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4255C55-65B2-4BED-B6B7-D73B7B435465}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

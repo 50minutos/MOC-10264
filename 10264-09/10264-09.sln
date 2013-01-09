@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001-Refactoring", "001-Refactoring\001-Refactoring.csproj", "{4266E8D4-2F53-4FBA-87A1-9A70467CA451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002-UnitTest", "002-UnitTest\002-UnitTest.csproj", "{D4B2B05F-2B05-40F0-A167-9F713180D552}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D5B0D8EC-704D-4DC0-9577-2CA7CDEB2EA5}"
+	ProjectSection(SolutionItems) = preProject
+		10264-09.vsmdi = 10264-09.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003-CustomError", "003-CustomError\003-CustomError.csproj", "{C694E4D6-15FE-41FA-93AC-9E64D6493D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{0368ABE3-6684-4F90-8D04-ACC38593F15E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = 10264-09.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4266E8D4-2F53-4FBA-87A1-9A70467CA451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4266E8D4-2F53-4FBA-87A1-9A70467CA451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4266E8D4-2F53-4FBA-87A1-9A70467CA451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4266E8D4-2F53-4FBA-87A1-9A70467CA451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B2B05F-2B05-40F0-A167-9F713180D552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B2B05F-2B05-40F0-A167-9F713180D552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B2B05F-2B05-40F0-A167-9F713180D552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B2B05F-2B05-40F0-A167-9F713180D552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C694E4D6-15FE-41FA-93AC-9E64D6493D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C694E4D6-15FE-41FA-93AC-9E64D6493D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C694E4D6-15FE-41FA-93AC-9E64D6493D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C694E4D6-15FE-41FA-93AC-9E64D6493D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0368ABE3-6684-4F90-8D04-ACC38593F15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0368ABE3-6684-4F90-8D04-ACC38593F15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0368ABE3-6684-4F90-8D04-ACC38593F15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0368ABE3-6684-4F90-8D04-ACC38593F15E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

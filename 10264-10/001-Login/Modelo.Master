@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modelo.master.cs" Inherits="_001_Login.Modelo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <p style="text-align: center;">
+            <asp:HyperLink NavigateUrl="~/WebForm1.aspx" runat="server" Text="Home" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink NavigateUrl="~/Restrito/WebForm1.aspx" runat="server" Text="Restrito" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink NavigateUrl="~/Diretoria/WebForm1.aspx" runat="server" Text="Diretoria" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            <asp:LoginView runat="server">
+                <LoggedInTemplate>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Restrito/AlterarSenha.aspx" runat="server"
+                        Text="Alterar minha senha" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LoginName runat="server" />
+                </LoggedInTemplate>
+            </asp:LoginView>
+        </p>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

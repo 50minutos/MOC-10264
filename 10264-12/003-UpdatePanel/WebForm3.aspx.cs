@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace _003_UpdatePanel
+{
+    public partial class WebForm3 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Hora.Text = "aguardando início...";
+            Timer1.Enabled = true;
+        }
+
+        protected void AtualizarHora(object sender, EventArgs e)
+        {
+            Hora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss.fff") ;
+        }
+    }
+}

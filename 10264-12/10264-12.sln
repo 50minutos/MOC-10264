@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001-ClientSideScript", "001-ClientSideScript\001-ClientSideScript.csproj", "{D24E1023-C164-4771-B14E-929AB110C0A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002-ServerSideControlComClientSideScript", "002-ServerSideControlComClientSideScript\002-ServerSideControlComClientSideScript.csproj", "{C8D0A92C-8B99-4AE8-8EB9-F53BF998F68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003-UpdatePanel", "003-UpdatePanel\003-UpdatePanel.csproj", "{41833C7F-ED81-41C6-94C1-D321073EA74B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004-AjaxEnabledWCFService", "004-AjaxEnabledWCFService\004-AjaxEnabledWCFService.csproj", "{A9750F7D-1EF1-4FF9-B4AC-E5B45074126F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005-LoginAjax", "005-LoginAjax\005-LoginAjax.csproj", "{6DD9603B-C4EF-474F-A527-6CD285818AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D24E1023-C164-4771-B14E-929AB110C0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24E1023-C164-4771-B14E-929AB110C0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24E1023-C164-4771-B14E-929AB110C0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24E1023-C164-4771-B14E-929AB110C0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D0A92C-8B99-4AE8-8EB9-F53BF998F68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D0A92C-8B99-4AE8-8EB9-F53BF998F68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D0A92C-8B99-4AE8-8EB9-F53BF998F68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D0A92C-8B99-4AE8-8EB9-F53BF998F68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41833C7F-ED81-41C6-94C1-D321073EA74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41833C7F-ED81-41C6-94C1-D321073EA74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41833C7F-ED81-41C6-94C1-D321073EA74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41833C7F-ED81-41C6-94C1-D321073EA74B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9750F7D-1EF1-4FF9-B4AC-E5B45074126F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9750F7D-1EF1-4FF9-B4AC-E5B45074126F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9750F7D-1EF1-4FF9-B4AC-E5B45074126F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9750F7D-1EF1-4FF9-B4AC-E5B45074126F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD9603B-C4EF-474F-A527-6CD285818AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD9603B-C4EF-474F-A527-6CD285818AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD9603B-C4EF-474F-A527-6CD285818AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD9603B-C4EF-474F-A527-6CD285818AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

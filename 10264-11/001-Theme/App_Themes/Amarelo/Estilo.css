@@ -1,0 +1,25 @@
+﻿body
+{
+    background-color: #ff0;
+}
+
+h1
+{
+    font-family: Comic Sans MS, Verdana, Arial, Trebuchet MS;
+}
+
+p
+{
+    text-align:justify;
+}
+
+.centro
+{
+    text-align:center;
+}
+
+.direita
+{
+    text-align:right;
+}
+

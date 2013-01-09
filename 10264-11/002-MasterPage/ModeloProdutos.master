@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Modelo.Master" AutoEventWireup="true"
+    CodeBehind="ModeloProdutos.master.cs" Inherits="_002_MasterPage.ModeloProdutos" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>
+        submenu de produtos</h2>
+    <p style="text-align: center;">
+        <a href="/WebForm2.aspx">Produtos 1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/WebForm4.aspx">
+            Produtos 2</a></p>
+        <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder3"></asp:ContentPlaceHolder>'
+</asp:Content>

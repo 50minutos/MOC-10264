@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="Cabecalho">
+        Título</div>
+    <div id="Conteudo">
+        Texto da bagaça</div>
+    <div id="Rodape">
+        Rodapé</div>
+    <script type="text/javascript">
+        $(Cabecalho).bind("click", function () { alert("opa... essa é do bind()") })
+        
+        //$(Dinamica).bind("click", function () { alert("opa... essa é do bind()") })
+        
+        $("div").live("click", function () { alert(this.id); });
+
+        $("<div id='Dinamica'>elemento dinâmico</div>").appendTo("body");
+    </script>
+</body>
+</html>
