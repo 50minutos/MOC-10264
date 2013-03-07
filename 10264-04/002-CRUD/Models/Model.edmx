@@ -6,14 +6,14 @@
     <edmx:StorageModels>
       <Schema Namespace="DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="DBModelStoreContainer">
-          <EntitySet Name="PESSOA" EntityType="DBModel.Store.PESSOA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Pessoas" EntityType="DBModel.Store.Pessoas" store:Type="Tables" Schema="dbo" />
         </EntityContainer>
-        <EntityType Name="PESSOA">
+        <EntityType Name="Pessoas">
           <Key>
-            <PropertyRef Name="CODIGO_PESSOA" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="CODIGO_PESSOA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="NOME_PESSOA" Type="varchar" MaxLength="50" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="nvarchar" Nullable="false" MaxLength="50" />
         </EntityType>
       </Schema>
     </edmx:StorageModels>
@@ -25,10 +25,10 @@
         </EntityContainer>
         <EntityType Name="Pessoa">
           <Key>
-            <PropertyRef Name="Codigo" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Nome" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -36,9 +36,9 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities">
-          <EntitySetMapping Name="Pessoas"><EntityTypeMapping TypeName="DBModel.Pessoa"><MappingFragment StoreEntitySet="PESSOA">
-            <ScalarProperty Name="Codigo" ColumnName="CODIGO_PESSOA" />
-            <ScalarProperty Name="Nome" ColumnName="NOME_PESSOA" />
+          <EntitySetMapping Name="Pessoas"><EntityTypeMapping TypeName="DBModel.Pessoa"><MappingFragment StoreEntitySet="Pessoas">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Nome" ColumnName="Nome" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
@@ -60,7 +60,7 @@
     </Options>
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
-      <Diagram Name="Model">
+      <Diagram Name="Model" ZoomLevel="226">
         <EntityTypeShape EntityType="DBModel.Pessoa" Width="1.5" PointX="0.75" PointY="0.75" Height="1.2636116536458335" IsExpanded="true" />
       </Diagram>
     </Diagrams>

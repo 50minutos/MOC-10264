@@ -19,29 +19,5 @@ namespace _001_Model.Models
 
         [Column(Name = "SEXO_PESSOA")]
         public char Sexo { get; set; }
-
-        public void Insert()
-        {
-            //sua lógica vai aqui!!!
-        }
-
-        public void Update()
-        {
-            //sua lógica vai aqui!!!
-        }
-
-        public void Delete()
-        {
-            //sua lógica vai aqui!!!
-        }
-
-        public List<Pessoa> Get(int codigo)
-        {
-            var retorno = new List<Pessoa>();
-
-            //sua lógica vai aqui!!!
-
-            return retorno;
-        }
     }
 }

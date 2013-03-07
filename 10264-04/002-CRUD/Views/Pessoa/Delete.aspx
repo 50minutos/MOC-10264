@@ -12,7 +12,7 @@
         <legend>Fields</legend>
         
         <div class="display-label">Codigo</div>
-        <div class="display-field"><%: Model.Codigo %></div>
+        <div class="display-field"><%: Model.Id %></div>
         
         <div class="display-label">Nome</div>
         <div class="display-field"><%: Model.Nome %></div>

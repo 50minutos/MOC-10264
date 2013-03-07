@@ -11,6 +11,9 @@ namespace _005_Cookie
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["NOME"] == null) 
+                Response.Redirect("~/webform1.aspx");
+            
             Response.Write(Request.Cookies["NOME"].Value);
         }
     }

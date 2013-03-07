@@ -26,7 +26,7 @@ namespace _003_RotaCustomizada
 
             rotas.MapPageRoute("PesquisaCEP", "CEP/{CEP}", "~/WebForm3.aspx", true, defaults, constraints);
 
-            rotas.MapPageRoute("PesquisaProdutosComCategoria", "produto/{CATEGORIA}/{PRODUTO}", "~/WebForm2.aspx");
+            rotas.MapPageRoute("PesquisaProdutosComCategoria", "produto/{CATEGORIA}/{PRODUTO}", "~/WebForm4.aspx");
         }
     }
 }

@@ -13,5 +13,10 @@ namespace _004_Validator
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

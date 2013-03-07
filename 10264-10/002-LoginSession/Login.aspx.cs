@@ -17,7 +17,7 @@ namespace _002_LoginSession
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            var cs = @"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Admin\Desktop\MOC-10264\10264-10\002-LoginSession\App_Data\Banco.mdf;Integrated Security=True;User Instance=True";
+            var cs = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|Banco.mdf;Integrated Security=True;User Instance=True";
 
             using (var c = new SqlConnection(cs))
             {

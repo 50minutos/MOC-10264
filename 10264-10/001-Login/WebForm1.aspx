@@ -4,4 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>
     Essa é a página Home</h1>
+
+<p>executar o aspnet_regsql /W para configurar o banco que você JÁ CRIOU (vs cmd prompt no modo administrator)</p>
+<p>ver o web.config do raiz (seção connectionStrings)</p>
 </asp:Content>
+

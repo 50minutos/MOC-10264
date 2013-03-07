@@ -123,11 +123,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram Name="Model" ZoomLevel="197" >
-        <EntityTypeShape EntityType="Model.Sexo" Width="1.5" PointX="2.125" PointY="1.25" Height="1.2636116536458335" />
-        <EntityTypeShape EntityType="Model.Pessoa" Width="1.5" PointX="4.375" PointY="0.875" Height="1.592306315104167" />
+        <EntityTypeShape EntityType="Model.Sexo" Width="1.5" PointX="0.875" PointY="0.5" Height="1.427958984375" />
+        <EntityTypeShape EntityType="Model.Pessoa" Width="1.5" PointX="3.25" PointY="0.5" Height="1.592306315104167" />
         <AssociationConnector Association="Model.SexoPessoa">
-          <ConnectorPoint PointX="3.625" PointY="1.8586531575520835" />
-          <ConnectorPoint PointX="4.375" PointY="1.8586531575520835" />
+          <ConnectorPoint PointX="2.375" PointY="1.2139794921875" />
+          <ConnectorPoint PointX="3.25" PointY="1.2139794921875" />
         </AssociationConnector>
       </Diagram>
     </edmx:Diagrams>

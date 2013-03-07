@@ -30,7 +30,7 @@ namespace _001_Model.Models
             //sua lógica vai aqui!!!
         }
 
-        public List<Livro> Get(int codigo)
+        public List<Livro> Get(int codigo = 0)
         {
             var retorno = new List<Livro>();
 

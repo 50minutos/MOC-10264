@@ -33,6 +33,5 @@
 <%--google penaliza isso:--%>
     <p style="font-size:0px;">maçã, abóbora</p>
     <p style="color:#fff;">maçã, abóbora</p>
-
 </body>
 </html>

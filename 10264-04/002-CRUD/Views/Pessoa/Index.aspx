@@ -22,12 +22,12 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "Edit", new { id=item.Codigo }) %> |
-                <%: Html.ActionLink("Details", "Details", new { id=item.Codigo })%> |
-                <%: Html.ActionLink("Delete", "Delete", new { id=item.Codigo })%>
+                <%: Html.ActionLink("Edit", "Edit", new { id=item.Id }) %> |
+                <%: Html.ActionLink("Details", "Details", new { id=item.Id })%> |
+                <%: Html.ActionLink("Delete", "Delete", new { id=item.Id })%>
             </td>
             <td>
-                <%: item.Codigo %>
+                <%: item.Id %>
             </td>
             <td>
                 <%: item.Nome %>

@@ -9,8 +9,8 @@
     <div>
         <h1>
             Eu mesmo!!!</h1>
-
-            <%: ViewData["NOME"].ToString() %>
+        <p>
+            <%: ViewData["NOME"].ToString() %></p>
     </div>
 </body>
 </html>

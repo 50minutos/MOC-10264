@@ -9,6 +9,6 @@ namespace _001_Model.Models
     [MetadataType(typeof(CustomerMetadata))]
     public partial class Customer
     {
-
+        
     }
 }

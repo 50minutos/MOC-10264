@@ -12,7 +12,6 @@ namespace _003_Helpers.Models
         [DisplayName("Código:")]
         public int Codigo { get; set; }
 
-
         [DisplayName("Nome:")]
         [Required(AllowEmptyStrings=false, ErrorMessage="preencha o nome")]
         public String Nome { get; set; }

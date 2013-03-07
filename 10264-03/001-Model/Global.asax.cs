@@ -19,7 +19,7 @@ namespace _001_Model
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Customer", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
         }

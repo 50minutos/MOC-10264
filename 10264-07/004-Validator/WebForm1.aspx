@@ -30,14 +30,14 @@
     </p>
     <p>
         Digite uma senha:<br />
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
             ControlToValidate="TextBox3" Display="None" ErrorMessage="Preencha a senha" 
             SetFocusOnError="True"></asp:RequiredFieldValidator>
     </p>
     <p>
         Confirme a senha:<br />
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
             ControlToValidate="TextBox4" Display="None" 
             ErrorMessage="Confirme a senha digitada" SetFocusOnError="True"></asp:RequiredFieldValidator>
@@ -54,7 +54,7 @@
             SetFocusOnError="True" Type="Integer"></asp:CompareValidator>
     </p>
     <p>
-        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
     </p>
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
         ShowMessageBox="True" ShowSummary="False" />

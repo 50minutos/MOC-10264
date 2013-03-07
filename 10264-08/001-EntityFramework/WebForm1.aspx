@@ -9,10 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
-            AllowSorting="True" AutoGenerateColumns="False" DataSourceID="EDS" 
-            DataKeyNames="CustomerID">
+            AllowSorting="True" AutoGenerateColumns="False" DataSourceID="EDS">
             <Columns>
                 <asp:BoundField DataField="CustomerID" HeaderText="CustomerID" ReadOnly="True" 
                     SortExpression="CustomerID" />
@@ -28,7 +26,6 @@
             EntitySetName="Clientes" OrderBy="it.[CustomerID]" 
             Select="it.[CustomerID], it.[Nome], it.[Sobrenome]">
         </asp:EntityDataSource>
-    
     </div>
     </form>
 </body>

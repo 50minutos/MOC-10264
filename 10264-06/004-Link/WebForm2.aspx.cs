@@ -11,7 +11,11 @@ namespace _004_Link
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (RouteData.Values["CATEGORIA"] == null || RouteData.Values["PRODUTO"] == null)
+                Response.Redirect("/home");
 
+            Response.Write(String.Format("<p>{0}</p>", RouteData.Values["CATEGORIA"].ToString()));
+            Response.Write(String.Format("<p>{0}</p>", RouteData.Values["PRODUTO"].ToString()));
         }
     }
 }

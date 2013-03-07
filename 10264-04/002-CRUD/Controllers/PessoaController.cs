@@ -14,7 +14,7 @@ namespace _002_CRUD.Controllers
 
         public ActionResult Index()
         {
-            return View(new DBEntities().Pessoas);
+            return View(new DBEntities().Pessoas.ToList());
         }
 
         //
@@ -22,7 +22,7 @@ namespace _002_CRUD.Controllers
 
         public ActionResult Details(int id)
         {
-            return View(new DBEntities().Pessoas.FirstOrDefault(x => x.Codigo == id));
+            return View(new DBEntities().Pessoas.FirstOrDefault(x => x.Id == id));
         }
 
         //
@@ -63,7 +63,7 @@ namespace _002_CRUD.Controllers
  
         public ActionResult Edit(int id)
         {
-            return View(new DBEntities().Pessoas.FirstOrDefault(x => x.Codigo == id));
+            return View(new DBEntities().Pessoas.FirstOrDefault(x => x.Id == id));
         }
 
         //
@@ -89,7 +89,7 @@ namespace _002_CRUD.Controllers
  
         public ActionResult Delete(int id)
         {
-            return View(new DBEntities().Pessoas.FirstOrDefault(x => x.Codigo == id));
+            return View(new DBEntities().Pessoas.FirstOrDefault(x => x.Id == id));
         }
 
         //

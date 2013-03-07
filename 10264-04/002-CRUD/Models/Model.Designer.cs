@@ -113,11 +113,13 @@ namespace _002_CRUD.Models
         /// <summary>
         /// Create a new Pessoa object.
         /// </summary>
-        /// <param name="codigo">Initial value of the Codigo property.</param>
-        public static Pessoa CreatePessoa(global::System.Int32 codigo)
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="nome">Initial value of the Nome property.</param>
+        public static Pessoa CreatePessoa(global::System.Int32 id, global::System.String nome)
         {
             Pessoa pessoa = new Pessoa();
-            pessoa.Codigo = codigo;
+            pessoa.Id = id;
+            pessoa.Nome = nome;
             return pessoa;
         }
 
@@ -129,32 +131,32 @@ namespace _002_CRUD.Models
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.Int32 Codigo
+        public global::System.Int32 Id
         {
             get
             {
-                return _Codigo;
+                return _Id;
             }
             set
             {
-                if (_Codigo != value)
+                if (_Id != value)
                 {
-                    OnCodigoChanging(value);
-                    ReportPropertyChanging("Codigo");
-                    _Codigo = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("Codigo");
-                    OnCodigoChanged();
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
                 }
             }
         }
-        private global::System.Int32 _Codigo;
-        partial void OnCodigoChanging(global::System.Int32 value);
-        partial void OnCodigoChanged();
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.String Nome
         {
@@ -166,7 +168,7 @@ namespace _002_CRUD.Models
             {
                 OnNomeChanging(value);
                 ReportPropertyChanging("Nome");
-                _Nome = StructuralObject.SetValidValue(value, true);
+                _Nome = StructuralObject.SetValidValue(value, false);
                 ReportPropertyChanged("Nome");
                 OnNomeChanged();
             }

@@ -14,11 +14,11 @@
             <legend>Fields</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.Codigo) %>
+                <%: Html.LabelFor(model => model.Id) %>
             </div>
             <div class="editor-field">
-                <%: Model.Codigo %>
-                <%: Html.ValidationMessageFor(model => model.Codigo) %>
+                <%: Model.Id %>
+                <%: Html.ValidationMessageFor(model => model.Id) %>
             </div>
             
             <div class="editor-label">
