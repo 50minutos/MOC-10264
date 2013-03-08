@@ -1,0 +1,124 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #ccc;
+    font-family: Courier New, Courier;
+    font-size: 90%;
+}
+
+#header
+{
+    width: 960px;
+    height: 150px;
+    margin: 0px auto;
+    background-color: #000;
+    background-image: url(header.jpg);
+}
+
+#footer
+{
+    width: 940px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #000;
+    color: #080;
+    text-align: center;
+}
+
+#content
+{
+    width: 938px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#content *
+{
+    margin: 5px;
+}
+
+#content table
+{
+    border: 1px solid #ccc;
+}
+
+#content th, #content td
+{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#content th
+{
+    font-weight: bold;
+}
+
+#content a
+{
+    text-decoration: none;
+    background-color: #ccc;
+    padding: 3px 13px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#content input[type="submit"]
+{
+    font-family: Courier New, Courier;
+    font-size:100%;
+    background-color: #ccc;
+    padding: 3px 13px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
