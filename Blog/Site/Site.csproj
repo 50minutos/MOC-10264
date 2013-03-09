@@ -76,6 +76,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlHelperExtension.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\CategoriaMetadata.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostMetadata.cs" />
     <Compile Include="Models\Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,7 +94,18 @@
     <Content Include="Content\header.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Categoria\Create.aspx" />
+    <Content Include="Views\Categoria\Delete.aspx" />
+    <Content Include="Views\Categoria\Details.aspx" />
+    <Content Include="Views\Categoria\Edit.aspx" />
+    <Content Include="Views\Categoria\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Post\Create.aspx" />
+    <Content Include="Views\Post\DDLUsuarios.ascx" />
+    <Content Include="Views\Post\Delete.aspx" />
+    <Content Include="Views\Post\Details.aspx" />
+    <Content Include="Views\Post\Edit.aspx" />
+    <Content Include="Views\Post\Index.aspx" />
     <Content Include="Views\Usuario\Create.aspx" />
     <Content Include="Views\Usuario\Delete.aspx" />
     <Content Include="Views\Usuario\Details.aspx" />
@@ -141,7 +157,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1112</DevelopmentServerPort>
+          <DevelopmentServerPort>1113</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

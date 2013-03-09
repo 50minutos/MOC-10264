@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Modelo.Master" Inherits="System.Web.Mvc.ViewPage<Site.Models.Usuario>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Modelo.Master" Inherits="System.Web.Mvc.ViewPage<Site.Models.Post>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Edit
@@ -18,24 +18,32 @@
                 <%: Html.LabelFor(model => model.Cod) %>
             </div>
             <div class="editor-field">
-                <%: Model.Cod %>
-                <%: Html.HiddenFor(model => model.Cod) %>
+                <%: Html.TextBoxFor(model => model.Cod) %>
+                <%: Html.ValidationMessageFor(model => model.Cod) %>
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.Nome) %>
+                <%: Html.LabelFor(model => model.Titulo) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.Nome) %>
-                <%: Html.ValidationMessageFor(model => model.Nome) %>
+                <%: Html.TextBoxFor(model => model.Titulo) %>
+                <%: Html.ValidationMessageFor(model => model.Titulo) %>
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.Senha) %>
+                <%: Html.LabelFor(model => model.Conteudo) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.Senha) %>
-                <%: Html.ValidationMessageFor(model => model.Senha) %>
+                <%: Html.TextBoxFor(model => model.Conteudo) %>
+                <%: Html.ValidationMessageFor(model => model.Conteudo) %>
+            </div>
+            
+            <div class="editor-label">
+                <%: Html.LabelFor(model => model.CodUsuario) %>
+            </div>
+            <div class="editor-field">
+                <%: Html.TextBoxFor(model => model.CodUsuario) %>
+                <%: Html.ValidationMessageFor(model => model.CodUsuario) %>
             </div>
             
             <p>

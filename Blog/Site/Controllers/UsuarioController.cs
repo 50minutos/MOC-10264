@@ -21,7 +21,7 @@ namespace Site.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Usuarios.FirstOrDefault(u => u.Cod == id));
         }
 
         //
@@ -30,15 +30,15 @@ namespace Site.Controllers
         public ActionResult Create()
         {
             return View();
-        } 
+        }
 
         //
         // POST: /Usuario/Create
-        
+
         [HttpPost]
         public ActionResult Create(Models.Usuario u)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var e = new Models.DBEntities();
                 e.AddToUsuarios(u);
@@ -51,28 +51,33 @@ namespace Site.Controllers
                 return View();
             }
         }
-        
+
         //
         // GET: /Usuario/Edit/5
- 
+
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Usuarios.FirstOrDefault(u => u.Cod == id));
         }
 
         //
         // POST: /Usuario/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Models.Usuario u)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
- 
+                using (var e = new Models.DBEntities())
+                {
+                    e.Attach(e.Usuarios.Single(x => x.Cod == u.Cod));
+                    e.ApplyCurrentValues("Usuarios", u);
+                    e.SaveChanges();
+                }
+
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
                 return View();
             }
@@ -80,28 +85,31 @@ namespace Site.Controllers
 
         //
         // GET: /Usuario/Delete/5
- 
+
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Usuarios.FirstOrDefault(u => u.Cod == id));
         }
 
         //
         // POST: /Usuario/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [ActionName("Delete")]
+        public ActionResult ProcessDelete(int id)
         {
-            try
+            using (var e = new Models.DBEntities())
             {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
+                var obj = e.Usuarios.FirstOrDefault(x => x.Cod == id);
+
+                if (obj != null)
+                {
+                    e.DeleteObject(obj);
+                    e.SaveChanges();
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction("Index");
         }
     }
 }

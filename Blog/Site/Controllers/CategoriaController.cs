@@ -13,7 +13,7 @@ namespace Site.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(new Models.DBEntities().Categorias.ToList());
         }
 
         //
@@ -21,7 +21,7 @@ namespace Site.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Categorias.FirstOrDefault(c => c.Cod == id));
         }
 
         //
@@ -30,47 +30,54 @@ namespace Site.Controllers
         public ActionResult Create()
         {
             return View();
-        } 
+        }
 
         //
         // POST: /Categoria/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Models.Categoria c)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
+                var e = new Models.DBEntities();
+                e.AddToCategorias(c);
+                e.SaveChanges();
 
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
                 return View();
             }
         }
-        
+
         //
         // GET: /Categoria/Edit/5
- 
+
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Categorias.FirstOrDefault(c => c.Cod == id));
         }
 
         //
         // POST: /Categoria/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Models.Categoria c)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
- 
+                using (var e = new Models.DBEntities())
+                {
+                    e.Attach(e.Categorias.Single(x => x.Cod == c.Cod));
+                    e.ApplyCurrentValues("Categorias", c);
+                    e.SaveChanges();
+                }
+
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
                 return View();
             }
@@ -78,28 +85,31 @@ namespace Site.Controllers
 
         //
         // GET: /Categoria/Delete/5
- 
+
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Categorias.FirstOrDefault(c => c.Cod == id));
         }
 
         //
         // POST: /Categoria/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [ActionName("Delete")]
+        public ActionResult ProcessDelete(int id)
         {
-            try
+            using (var e = new Models.DBEntities())
             {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
+                var obj = e.Categorias.FirstOrDefault(x => x.Cod == id);
+
+                if (obj != null)
+                {
+                    e.DeleteObject(obj);
+                    e.SaveChanges();
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction("Index");
         }
     }
 }

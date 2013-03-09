@@ -1,22 +1,32 @@
 ﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
+<%@ Import Namespace="Site.Helpers" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<link href="../../Content/Site.css" rel="Stylesheet" type="text/css"/>
+    <link href="../../Content/Site.css" rel="Stylesheet" type="text/css" />
     <title>
         <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
     </title>
 </head>
 <body>
     <div id="header">
+        <ul>
+            <li>
+                <%:Html.MyActionLink("Usuários", "Index", "Usuario")%></li>
+            <li>
+                <%:Html.MyActionLink("Categorias", "Index", "Categoria")%></li>
+            <li>
+                <%:Html.MyActionLink("Posts", "Index", "Post")%></li>
+            <li>
+                <%:Html.MyActionLink("Home", "Index", "Home")%></li>
+        </ul>
     </div>
-    
     <div id="content">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
     </div>
-    
     <div id="footer">
         by Agnaldo &copy; 2013
     </div>

@@ -9,7 +9,7 @@ namespace Site.Models
 {
     public class UsuarioMetadata
     {
-        [DisplayName("Código do usuário:")]
+        
         public int Cod { get; set; }
 
         [Required(ErrorMessage = "Preencha o nome")]

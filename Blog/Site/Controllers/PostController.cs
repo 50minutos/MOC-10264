@@ -13,7 +13,7 @@ namespace Site.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(new Models.DBEntities().Posts.ToList());
         }
 
         //
@@ -21,7 +21,7 @@ namespace Site.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Posts.FirstOrDefault(p => p.Cod == id));
         }
 
         //
@@ -29,6 +29,7 @@ namespace Site.Controllers
 
         public ActionResult Create()
         {
+            ViewData["USUARIOS"] = new SelectList(new Models.DBEntities().Usuarios.ToList(), "Cod", "Nome");
             return View();
         } 
 
@@ -36,15 +37,17 @@ namespace Site.Controllers
         // POST: /Post/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Models.Post p)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
+                var e = new Models.DBEntities();
+                e.AddToPosts(p);
+                e.SaveChanges();
 
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
                 return View();
             }
@@ -55,22 +58,27 @@ namespace Site.Controllers
  
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Posts.FirstOrDefault(p => p.Cod == id));
         }
 
         //
         // POST: /Post/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Models.Post p)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
- 
+                using (var e = new Models.DBEntities())
+                {
+                    e.Attach(e.Posts.Single(x => x.Cod == p.Cod));
+                    e.ApplyCurrentValues("Posts", p);
+                    e.SaveChanges();
+                }
+
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
                 return View();
             }
@@ -81,25 +89,28 @@ namespace Site.Controllers
  
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(new Models.DBEntities().Posts.FirstOrDefault(p => p.Cod == id));
         }
 
         //
         // POST: /Post/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [ActionName("Delete")]
+        public ActionResult ProcessDelete(int id)
         {
-            try
+            using (var e = new Models.DBEntities())
             {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
+                var obj = e.Posts.FirstOrDefault(x => x.Cod == id);
+
+                if (obj != null)
+                {
+                    e.DeleteObject(obj);
+                    e.SaveChanges();
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction("Index");
         }
     }
 }
