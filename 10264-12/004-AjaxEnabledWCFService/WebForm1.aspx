@@ -6,7 +6,7 @@
     <title></title>
     <script type="text/javascript">
         function somar(x, y) {
-            Calculadora.Somar(x,y, onSuccess, null, null);
+            Calculadora.Somar(x, y, onSuccess, null, null);
         }
 
         function onSuccess(result) {
@@ -24,7 +24,7 @@
     </asp:ScriptManager>
     <div>
         <p>
-            <input type="button" value="clique aqui" onclick="javascript:somar(20,30);" /></p>
+            <input type="button" value="clique aqui" onclick="javascript:somar(20, 30);" /></p>
     </div>
     </form>
 </body>

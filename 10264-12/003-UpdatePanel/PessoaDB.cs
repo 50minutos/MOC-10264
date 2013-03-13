@@ -19,7 +19,7 @@ namespace _003_UpdatePanel
 
             while (i <= 1000)
             {
-                pessoas.Add(new Pessoa{ Codigo = i++, Nome = ObterNome()});    
+                pessoas.Add(new Pessoa { Codigo = i++, Nome = ObterNome()});    
             }
         }
 

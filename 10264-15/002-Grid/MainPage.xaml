@@ -8,10 +8,10 @@
 
     <Grid x:Name="LayoutRoot" Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Padding="20" Content="Clique aqui nesse button"></Button>
-        <Button Grid.Row="1" Padding="20" Content="Clique aqui nesse outro button"></Button>
+        <Button Margin="10" Grid.Row="0" Padding="20" Content="Clique aqui nesse button"></Button>
+        <Button Margin="10" Grid.Row="1" Padding="20" Content="Clique aqui nesse outro button"></Button>
     </Grid>
 </UserControl>

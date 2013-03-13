@@ -15,7 +15,7 @@
             </Columns>
         </asp:GridView>
         <asp:ObjectDataSource ID="DS" runat="server" SelectMethod="Get" TypeName="_003_UpdatePanel.PessoaDB">
-        </asp:ObjectDataSource>
+   </asp:ObjectDataSource>
     </div>
     </form>
 </body>

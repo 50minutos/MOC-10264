@@ -9,7 +9,7 @@
     <form id="form1" runat="server">
     <div>
         <p>
-            <asp:Button ID="Button1" Text="clique aqui" runat="server" OnClientClick="javascript:alert('O avião... o avião... o avião...')" /></p>
+            <asp:Button ID="Button1" Text="clique aqui" runat="server" OnClientClick="alert('O avião... o avião... o avião...')" /></p>
         <p>
             <asp:Button ID="Button2" Text="clique aqui" runat="server" OnClientClick="javascript:alert('O avião... o avião... o avião...');return false;" /></p>
     </div>

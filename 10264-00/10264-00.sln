@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004-WebFormsLinq", "004-Web
 		{12EEFBCC-1CA8-460F-941A-D3820A9FF6C3} = {12EEFBCC-1CA8-460F-941A-D3820A9FF6C3}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005-Calculadora", "005-Calculadora\005-Calculadora.csproj", "{7E2F6594-B541-4896-988F-1DB9396269FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{8BA1C044-16EF-4167-8FB7-89248C4E4C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA1C044-16EF-4167-8FB7-89248C4E4C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA1C044-16EF-4167-8FB7-89248C4E4C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E2F6594-B541-4896-988F-1DB9396269FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2F6594-B541-4896-988F-1DB9396269FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2F6594-B541-4896-988F-1DB9396269FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2F6594-B541-4896-988F-1DB9396269FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
